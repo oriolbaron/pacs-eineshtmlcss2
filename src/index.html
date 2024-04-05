@@ -1,27 +1,125 @@
 <!DOCTYPE html>
-
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descobreix Praga</title>
+    <meta name="description" content="Explora Praga, des de la seva història fins a la seva vibrant escena gastronòmica. Una guia completa per no perdre't res.">
+    <meta name="keywords" content="Praga, viatge, turisme, guia, República Txeca, llocs d'interès, gastronomia">
+    <link rel="canonical" href="url_del_lloc_web">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Descobreix Praga">
+    <meta property="og:description" content="Una guia completa per explorar Praga, la ciutat de les cent torres.">
+    <meta property="og:image" content="url_a_la_imatge_destacada_de_praga.jpg">
+    <meta property="og:url" content="url_del_lloc_web">
+    <meta property="og:site_name" content="Descobreix Praga">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Descobreix Praga">
+    <meta name="twitter:description" content="Una guia completa per explorar Praga, la ciutat de les cent torres.">
+    <meta name="twitter:image" content="url_a_la_imatge_destacada_de_praga.jpg">
+    <link rel="icon" type="image/png" href="assets/images/prague-favicon.svg">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/images/prague.png" alt="Logo de Praga" class="header__logo-img">
+            <h1 class="header__title">Descobreix Praga</h1>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#introduccio" class="header__nav-link">Introducció</a></li>
+                <li class="header__nav-item"><a href="#llocs" class="header__nav-link">Llocs destacats</a></li>
+                <li class="header__nav-item"><a href="#activitats" class="header__nav-link">Activitats</a></li>
+                <li class="header__nav-item"><a href="#gastronomia" class="header__nav-link">Gastronomia</a></li>
+                <li class="header__nav-item"><a href="#informacio-practica" class="header__nav-link">Informació pràctica</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="body-container">
+        <section id="introduccio" class="intro">
+            <div class="intro__container">
+                <img src="assets/images/kopie-20190320-105206.jpg" alt="Vista de Praga" class="intro__image" id="introImage">
+            </div>
+        </section>
+        <section id="llocs" class="carousel">
+            <h2 class="carousel__title">Visita Praga</h2>
+            <div class="carousel__images">
+                <img src="assets/images/kopie-20190320-105128.jpg" alt="Lloc 1" class="carousel__image" loading="lazy">
+                <img src="assets/images/kopie-20190320-105206.jpg" alt="Lloc 2" class="carousel__image" loading="lazy">
+                <img src="assets/images/kopie-20190320-105305.jpg" alt="Lloc 3" class="carousel__image" loading="lazy">
+                <img src="assets/images/kopie-20190320-105437.jpg" alt="Lloc 4" class="carousel__image" loading="lazy">
+                <img src="assets/images/kopie-20190320-105458.jpg" alt="Lloc 5" class="carousel__image" loading="lazy">
+                <img src="assets/images/kopie-20190320-105657.jpg" alt="Lloc 6" class="carousel__image" loading="lazy">
+            </div>
+        </section>
+        <section id="activitats" class="activities">
+            <h2 class="activities__title">Activitats per fer a Praga</h2>
+            <div class="activities__cards">
+                <div class="activities__card">
+                    <h3 class="activities__card-title">Activitats culturals</h3>
+                    <p class="activities__card-description">Praga ofereix un ampli ventall d'activitats culturals com exposicions a museus, teatre, dansa, festivals de música, etc.</p>
+                </div>
+                <div class="activities__card">
+                    <h3 class="activities__card-title">Esports</h3>
+                    <p class="activities__card-description">Els esports més populars de la República Txeca són el futbol, l'equitació, el rem i l'atletisme. Durant tot l'any es pot gaudir de moltes activitats esportives tant a la ciutat de Praga com a altres municipis propers a la capital.</p>
+                </div>
+                <div class="activities__card">
+                    <h3 class="activities__card-title">Tradicions populars</h3>
+                    <p class="activities__card-description">Els mercats ambulants i les festes populars dels diferents barris de Praga són el caliu que fa que la ciutat tingui una identitat pròpia més propera a la vida d'un poble que al d'una ciutat europea.</p>
+                </div>
+                <div class="activities__card">
+                    <h3 class="activities__card-title">Rutes gastronòmiques</h3>
+                    <p class="activities__card-description">La barreja de cultures juntament amb la influència de grans gastronomies com l'alemanya, fan que la <a href="#gastronomia" class="activities__card-link">gastronomia txeca</a> hagi evolucionat cap a una identitat pròpia amb plats com la Česká bramboračka, el Goulash o el Vepřové koleno.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gastronomia" class="cuisine">
+            <h2 class="cuisine__title">La gastronomia txeca</h2>
+            <div class="cuisine__slideshow">
+                <img src="assets/images/ceska-bramboracka.jpg" alt="Česká bramboračka" class="cuisine__slide">
+                <img src="assets/images/goulash.jpg" alt="Goulash" class="cuisine__slide">
+                <img src="assets/images/veprove-koleno.jpg" alt="Vepřové koleno" class="cuisine__slide">
+                <img src="assets/images/smazeny-syr.jpg" alt="Smazeny syr" class="cuisine__slide">
+                <img src="assets/images/tatarak.jpg" alt="Tatarák" class="cuisine__slide">
+            </div>
+        </section>
+        <section id="informacio-practica" class="practical-info">
+            <h2 class="practical-info__title">Informació pràctica</h2>
+            <div class="practical-info__boxes">
+                <div class="practical-info__box">
+                    <h3 class="practical-info__box-title">Sobre Praga</h3>
+                    <p class="practical-info__box-description">Praga és realment considerada com una de les <strong>ciutats més boniques del món</strong>. Visitants de tots els racons del globus venen a admirar no sols <strong>la seva història i la seva arquitectura</strong>, rica en diferents estils, sinó també el seu ambient agradable i romàntic. Praga és així mateix una ciutat enamorada de l'art, i amb art és amb el que es trobarà a cada pas, literalment; també és la ciutat dels <strong>parcs i els jardins</strong>; i finalment, però no menys important, és una ciutat que gaudeix d'una <strong>merescuda fama gastronòmica</strong>, on podrà assaborir la millor cervesa del món.</p>
+                </div>
+                <div class="practical-info__box">
+                    <h3 class="practical-info__box-title">Contactes importants</h3>
+                    <p class="practical-info__box-description">Encara que la República Txeca està entre els 10 països més segurs del món, les trucades d'emergència són gratis i funcionen ininterrompudament en els següents contactes: <strong>112</strong> com a número europeu d'emergència per a la notificació de qualssevol successos extraordinaris. A més d'atendre en txec, també es parla en anglès, alemany i altres llengües importants del món; <strong>155</strong> com a servei mèdic d'emergència; <strong>156</strong> com a policia municipal; i <strong>158</strong> com a policia de la República Txeca.</p>
+                </div>
+                <div class="practical-info__box">
+                    <h3 class="practical-info__box-title">El temps, llengua, divisa i molt més</h3>
+                    <p class="practical-info__box-description">Praga té un clima típicament continental europeu, amb <strong>hiverns freds i estius càlids</strong>.</p>
+                    <p class="practical-info__box-description">La llengua oficial a la República Txeca és el <strong>txec</strong>. Als hotels, restaurants, monuments, museus i galeries, i a més en la majoria de les botigues, és possible comunicar-se en anglès o en alemany.</p>
+                    <p class="practical-info__box-description">La divisa de la República Txeca és la <strong>corona txeca (Kč/CZK)</strong>.</p>
+                </div>
+                <div class="practical-info__box">
+                    <h3 class="practical-info__box-title">Prague Visitor Pass</h3>
+                    <p class="practical-info__box-description">Gaudeixi de la comoditat de viatjar sense límits per Praga amb el <strong>Prague Visitor Pass</strong>, inclosos els trasllats entre ciutat i aeroport. Aprofiti l'accés gratuït o amb <strong>un descompte favorable a més de 60 experiències</strong>.</p>
+                    <p class="practical-info__box-description">El Prague Visitor Pass és <strong>vàlid durant 48, 72 o 120 hores després de l'activació</strong>. Durant la seva vigència, serveix com a passatge de transport públic il·limitat.</p>
+                </div>
+            </div>
+        </section>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__item"><a href="#" class="footer__link">Referències</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Política de Privacitat</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Avís legal</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Política de cookies</a></li>
+        </ul>
+        <p class="footer__copyright">&copy; 2024 | Descobreix Praga. Tots els drets reservats.</p>
+    </footer>
+</body>
 </html>
